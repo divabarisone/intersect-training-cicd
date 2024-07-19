@@ -4,8 +4,8 @@ jobs:
 
   test-python-versions:
     name: Check Python ${{ matrix.python_version }} on ${{ matrix.runs-on }}
-    runs-on: ${{ matrix.runs_on }}
     continue-on-error: ${{ matrix.allow_failure }}
+    runs-on: ${{ matrix.runs_on }}
     strategy:
       fail-fast: false 
       matrix:
